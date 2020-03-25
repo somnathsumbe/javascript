@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="demo"></p>
+        <button type="button" class="btn btn-success" onclick="add()">Add</button>
+
+        <script>
+            document.write("<hr>" + "<h3>" + 'Normal Fuction' + "</h3>" + "<hr>");
+
+            function abc() {
+                document.write("this is normal fucntion");
+            }
+            // abc();
+
+
+            function add() {
+                debugger;
+                document.write("<hr>" + "<h3>" + 'Fuction Addition' + "</h3>" + "<hr>");
+                var a = 10;
+                var b = 20;
+                var c = a + b;
+                document.write("Addition a+b =" + c);
+                alert("Addition a+b =" + c);
+            }
+
+            document.getElementById("demo").innerHTML = add;
+        </script>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="2.gif" alt="" id="bulb1">
+
+        <button type="button" class="btn btn-danger" onclick="dnone()">Hide</button><br>
+
+        <P id="fsize">Lorem ipsum dolor,Provident molestias quidem eos nobis quod?</P>
+        <button type="button" class="btn btn-danger" onclick="Infont()">Fontsize</button><br>
+        <button type="button" class="btn btn-success" onclick="btnon()">ON</button>
+
+        <img src="2.gif" alt="" id="bulb">
+
+        <button type="button" class="btn btn-danger" onclick="btoff()">OFF</button>
+    </div>
+    <script>
+        debugger;
+
+        function dnone() {
+            document.getElementById("bulb1").style.display='none';
+
+        }
+
+        function Infont() {
+            document.getElementById("fsize").style.fontSize="20px";
+
+        }
+        function btnon() {
+            document.getElementById("bulb").src = '1.gif';
+
+        }
+
+        function btoff() {
+            document.getElementById("bulb").src = '2.gif';
+
+        }
+    </script>
+
+</body>
+
+</html>

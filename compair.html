@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h4>Max Min Function</h4>
+        <button class="submit" onclick="myfun()">Min value</button>
+        <p id="demo"></p>
+
+        <button class="submit" onclick="myfun1()">Min value</button>
+        <p id="demo1"></p>
+        <hr>
+
+        <script>
+            var d = [40, 100, 20, 35, 1, 6, 10];
+            document.write("array = " + d + "<br>");
+            document.write("array sort= " + d.sort() + "<br>");
+
+            function myfun() {
+                debugger;
+                d.sort(function (a, b) {
+                    return a - b;
+                });
+                document.getElementById("demo").innerHTML = d[0];
+            }
+
+
+            function myfun1() {
+                debugger;
+                d.sort(function (a, b) {
+                    return b - a;
+                });
+                document.getElementById("demo1").innerHTML = d[0];
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>

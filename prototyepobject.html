@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Prototype Object</h1>
+
+    <script>
+        //it will return object.prototype
+        // console.log(Object.prototype)
+
+
+        var b = {};
+        // console.log(Object.getPrototypeOf(b));
+        // console.log(Object.getPrototypeOf(Object.prototype));
+
+        var b1 = new Object();
+        //  console.log(Object.getPrototypeOf(b1));
+        // console.log(Object.getPrototypeOf(Object.prototype));
+
+        var b2 = new Array();
+        // console.log(Object.getPrototypeOf(b2));
+        //console.log(Object.getPrototypeOf(Array.prototype));
+
+        var b3 = new String();
+        // console.log(Object.getPrototypeOf(b3));
+        //console.log(Object.getPrototypeOf(String.prototype));
+        function Mobile() {
+            this.a = 20;
+        }
+
+        // document.write(Mobile.prototype); 
+        //console.log(Mobile.prototype);
+
+        var lg = new Mobile();
+        Mobile.prototype.a = 10;
+        console.log(lg.a);
+
+        // console.log(lg.__proto__);
+        // console.log(Mobile.prototype === lg.__proto__);
+        // console.log(Mobile === lg.__proto__.constructor);
+        //  console.log(Mobile === Mobile.prototype.constructor);
+    </script>
+
+
+</body>
+
+</html>

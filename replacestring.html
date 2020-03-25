@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Replace string Content</h1>
+        <hr>
+
+        <script>
+            var d = "welcome to sahosoft Solutions sahosoft";
+            
+            document.write("String = " + d.replace("sahosoft", "Somnath") + "<br>");
+            document.write("String = " + d + "<br>");
+            document.write("String = " + d.replace(/SAHOSOFT/i, "Somnath") + "<br>");
+            document.write("String = " + d.replace(/sahosoft/g, "Somnath") + "<br>");
+
+            document.write(" <h1>" + "Uppercace" + " </h1>"+"<hr>"+"<br>");
+            document.write("String = " + d.toUpperCase() + "<br>");
+
+            document.write(" <h1>" + "Lowercase" + " </h1>"+"<hr>"+"<br>");
+            document.write("String = " + d.toLowerCase() + "<br>");
+
+
+            var fname = "Shivansh";
+            var lname = "Sumbe";
+            document.write(" <h1>" + "Concat" + " </h1>"+"<hr>"+"<br>");
+            document.write("Concat = " + fname.concat( lname) + "<br>");
+            document.write("Concat = " + fname.concat( " ", lname) + "<br>");
+            document.write("Concat + operator = " + fname+ " "+ lname + "<br>");
+            document.write(" <h1>" + "Trim " + " </h1>"+"<hr>"+"<br>");
+debugger;
+
+            var myname = " Shivansh ";
+            document.write("length = " + myname.length + "<br>");
+            var ss=myname.trim();
+            document.write("trim = " + ss + "<br>");
+            document.write("length = " + ss.length + "<br>");
+        
+        </script>
+
+    </div>
+
+</body>
+
+</html>

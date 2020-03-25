@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+    <script>
+        document.write("<h3>" + 'For-In loop' + "<h3>" + "<hr>" + "</Br>");
+        debugger;
+        var emp = {
+            fname: 'somnath',
+            lname: 'sumbe',
+            age: 32,
+            salary:500000
+        };
+
+        var text="";
+        var x;
+
+        for(x in emp){
+            text+=emp[x]+" ";
+        }
+        document.write(text);
+    </script>
+
+</body>
+
+</html>

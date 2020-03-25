@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function abc(...num) {
+            debugger;
+            var x=0;
+            for (var i of num)
+
+            {
+                x=x+i;
+            }
+            return x;
+        }
+
+        document.write(abc(20,30)+"<br>");
+        document.write(abc(20,30,30)+"<br>");
+        document.write(abc(20,30,30,40)+"<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>String to Array</h1>
+        <hr>
+        <button type="submit" class="btn-success btn-lg" onclick="myfun()">Convert</button>
+        <script>
+            document.write(" <h1>" + "Concat" + " </h1>" + "<hr>" + "<br>");
+            function myfun() {
+                var d = "somnath sumbe sunita sumbe";
+                document.write("String = " + d + "<br>");
+                var arr = d.split(" ");
+                document.write("0 = " + arr[0] + "<br>");
+                document.write("1 = " + arr[1] + "<br>");
+            }
+            var fname = "sohasoft";
+            var arr1 = fname.split("");
+            var text = "";
+            var i;
+            for (i = 0; i < arr1.length; i++) {
+                text += arr1[i] + "<br>";
+            }
+            document.write(text);
+        </script>
+
+    </div>
+
+</body>
+
+</html>

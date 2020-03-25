@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h3>Loop Method</h3>
+    <hr>
+    Array : <span id="array"></span><br>
+    Array Length : <span id="arraylength"></span><br>
+    Array List foreach and for loop : <p id="List"></p>
+    <script>
+        var students = ["Rahul", "Somnath", "Sohan", "Mohan", "Seema", "ronak"];
+        document.getElementById("array").innerHTML = students;
+        debugger;
+        var arraylength, test="", i;
+        arraylength = students.length;
+        document.getElementById("arraylength").innerHTML = arraylength;
+
+        text = "<ul>"
+        // for (i = 0; i < arraylength; i++) {
+        //     test +="<li>" + students[i] + "</li>";
+        // }
+        students.forEach(myfun);
+        function myfun(value){
+            test +="<li>" + value + "</li>";
+        }
+
+        text += "</ul>";
+        document.getElementById("List").innerHTML = test;
+    </script>
+</body>
+
+</html>

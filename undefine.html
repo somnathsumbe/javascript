@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script>
+        document.write("<h3>" + "Javascript undefine" + "</h3>" + "<hr>");
+
+        var x;
+        document.write("x = " + x + "<Br>");
+        document.write("type of = " + typeof (x) + "<Br>");
+
+        var xx = undefined;
+        document.write("xx = " + xx + "<Br>");
+        document.write("type of = " + typeof (xx) + "<Br>");
+
+        if(typeof(x)==="undefined"){
+            document.write("<br>"+"x is undefine");
+        }
+        else{
+            document.write("<br>"+"x is define");
+        }
+
+
+        if(typeof(y)==="undefined"){
+            document.write("<br>"+"y is undefine");
+        }
+        else{
+            document.write("<br>"+"y is define");
+        }
+
+        function abc(v1,v2){
+            sum=v1+v2;
+            document.write("<br>"+sum);
+        }
+
+abc(10);
+
+    </script>
+</body>
+
+</html>

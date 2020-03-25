@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var emp={id:101, name:"somnath"};
+        document.write(emp.id+"<br>");
+        document.write(emp.name+"<br>");
+        document.write(emp+"<br>");
+         var emp1=new Object();
+         emp1.id=102;
+         emp1.name="shvansh";
+
+         document.write(emp1.id+"<br>");
+        document.write(emp1.name+"<br>");
+        document.write(emp1+"<br>");
+debugger;
+        function emp2(id,name){
+            debugger;
+            this.id=id;
+            this.name=name;
+        }
+
+        var x= new emp2(103,"sunita");
+
+        document.write(x.id+"<br>");
+        document.write(x.name+"<br>");
+        document.write(x+"<br>");
+    </script>
+</body>
+</html>

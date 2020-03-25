@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h3>Alert Confirm Prompt box</h3>
+    <hr>
+    <button onclick="alertconfirmation()">Alert</button>
+    <button onclick="getconfirmation()">Confirm button</button>
+    <button onclick="Promptconfirmation()">Prompt button</button>
+    <div class="container">
+        <script>
+            function alertconfirmation() {
+                alert("Hi  how are you ");
+            }
+
+            function getconfirmation() {
+                var getval = confirm("Do you want Continue");
+                if (getval == true) {
+                    document.write("User want to continue");
+                    return ture;
+                } else {
+                    document.write("User Dont want  continue");
+                }
+            }
+
+            function Promptconfirmation() {
+
+                let getval = prompt("Enter your Name", "Your Name Here");
+                if (getval == null) {
+                    document.write("you are Enter nothing");
+                } else {
+                    document.write(" you have Enter " + getval);
+                }
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>

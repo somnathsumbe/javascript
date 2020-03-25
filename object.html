@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var emp = {
+            id: 100,
+            fname: "somnath",
+            lname: "sumbe",
+            age: 32
+        };
+        document.write("<h3>" + "Javascript Litral" + "</h3>" + "<hr>");
+        document.write("emp.id= " + emp.id + "<Br>");
+        document.write("emp.fname= " + emp.fname + "<Br>");
+        document.write("emp typeof = " + typeof (emp) + "<Br>");
+        document.write("Print only emp = " + emp + "<Br>");
+        debugger
+        document.write("<hr>" + "<h3>" + "Javascript new keyword" + "</h3>" + "<hr>");
+        var emp1 = new Object();
+        emp1.id = 101;
+        emp1.fname = "sunita";
+        emp1.lname = "sumbe";
+        emp1.age = 23;
+        emp1.salary = 80000;
+
+        document.write("emp1.id= " + emp1.id + "<Br>");
+        document.write("emp1.fname= " + emp1.fname + "<Br>");
+        document.write("emp1 typeof = " + typeof (emp1) + "<Br>");
+        document.write("Print only emp1 = " + emp1 + "<Br>");
+
+        document.write("<hr>" + "<h3>" + "Javascript Constractor" + "</h3>" + "<hr>");
+        function emp2(id, fname, lname, age) {
+            this.id = id;
+            this.fname = fname;
+            this.lname = lname;
+            this.age = age;
+        }
+debugger;
+        e=new  emp2(103,"suman","sumbe",58);
+        document.write("emp1.id= " + e.id + "<Br>");
+        document.write("emp1.fname= " + e.fname + "<Br>");
+        document.write("emp1 typeof = " + typeof (e) + "<Br>");
+        document.write("Print only emp2 = " + e + "<Br>");
+
+    </script>
+</body>
+
+</html>

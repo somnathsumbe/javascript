@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var n = [10, 2, 62, 8, 9, 78, 5, 59, 52, 45, 100];
+        document.write("Array = " + n + "<br>");
+
+        var n2 = n.find(findarray);
+        document.write("Find   = " + n2 + "<br>");
+
+        var n3 = n.findIndex(findarray);
+        document.write("Find Index  = " + n3 + "<br>");
+
+        var n4 = n.includes(100);
+        document.write("Includes  = " + n4 + "<br>");
+
+        var n5 = n.valueOf();
+        document.write("Value OF  = " + n5 + "<br>");
+
+        function findarray(value, index, array) {
+            return value > 10;
+        }
+
+        document.write("array  = " + n + "<br>");
+        var n6 = n.fill('20', 3, 8);
+
+
+        document.write("fill  = " + n6 + "<br>");
+    </script>
+</body>
+
+</html>

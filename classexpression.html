@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Class Expression</h1>
+    <hr>
+    <script>
+
+
+var Mobile = class Mobile1 {
+            constructor(mno, mcolor,mprice) {
+                this.mno = mno;
+                this.mcolor = mcolor;
+                this.mprice = mprice;
+            }
+            show=()=> this.mno +" "+ this.mcolor +" "+ this.price+"<br>";
+
+        };
+
+
+        // var Mobile = class {
+        //     constructor(mno, mcolor,mprice) {
+        //         this.mno = mno;
+        //         this.mcolor = mcolor;
+        //         this.mprice = mprice;
+        //     }
+        //     show=()=> this.mno +" "+ this.mcolor +" "+ this.price+"<br>";
+
+        // };
+
+        let samsang= new Mobile(" 3310 " , " Black" , "Rs - 180000");
+        document.write("Samsang Mobile Specification"+"<br>");
+        document.write("Model No:"+samsang.mno+"<br>");
+        document.write("Color"+samsang.mcolor+"<br>");
+        document.write("Price"+samsang.mprice+"<br><br>");
+
+
+
+    </script>
+</body>
+
+</html>

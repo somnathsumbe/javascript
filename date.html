@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Date Conversion </h3>
+        <hr>
+        <script>
+            var d = new Date();
+            document.write(typeof (d) + "<br>");
+            document.write(String(Date()));
+            document.write(typeof (String(Date())) + "<br>");
+            Date.toString();
+            document.write(typeof (Date.toString()) + "<br>");
+            document.write(d.getMonth() + "<br>");
+            document.write("<h3>" + "String to Number Conversion " + "</h3>" + "<hr>" + "<Br>");
+            var age = "32";
+            document.write(typeof (age) + "<br>");
+            document.write(typeof (Number(age)) + "<br>" + age);
+
+            document.write("<h3>" + "Booleans to Number Conversion " + "</h3>" + "<hr>" + "<Br>");
+
+            document.write(Number(true) + "<br>");
+            document.write(Number(false) + "<br>");
+
+            document.write("<h3>" + "Date to Number Conversion " + "</h3>" + "<hr>" + "<Br>");
+            var td = new Date();
+            document.write(td + "<br>");
+            document.write(typeof (Number(td)) + "<br>");
+            document.write(td + "<br>");
+
+            document.write("<h3>" + "Automatic type Conversion " + "</h3>" + "<hr>" + "<Br>");
+          
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>

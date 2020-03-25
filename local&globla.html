@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <script>
+        // Arith();
+        function Arith() {
+            var a = 10;
+            var b = 20;
+            var result = a + b;
+            document.write("Addition " + result + "<Br>");
+
+            var result = a - b;
+            document.write("Subtraction  " + result + "<Br>");
+
+            var result = a * b;
+            document.write("Multification " + result + "<Br>");
+
+            var result = a / b;
+            document.write("Division" + result + "<Br>");
+
+            var result = a % b;
+            document.write("Module" + result + "<Br>");
+
+            var result1 = ++a;
+            var result2 = b++;
+            document.write("pri incriment" + result1 + "<Br>");
+            document.write("post incriment" + result2 + "<Br>");
+
+            var result3 = --a;
+            var result4 = b--;
+            document.write("pri dcriment" + result3 + "<Br>");
+            document.write("post decriment" + result4 + "<Br>");
+        }
+        // Campa();
+
+        function Campa() {
+
+            var a = 10;
+            var b = 20;
+            var result = a == b;
+            document.write("a==b :" + result + "<Br>");
+
+            var result = a != b;
+            document.write("a!=b :" + result + "<Br>");
+
+            var result = a > b;
+            document.write("a>b :" + result + "<Br>");
+
+            var result = a >= b;
+            document.write("a>=b :" + result + "<Br>");
+
+
+            var result = a <= b;
+            document.write("a<=b : " + result + "<Br>");
+
+            debugger;
+
+            var result = a < b;
+            document.write(" a < b : " + result);
+
+        }
+        // Logi();
+        function Logi() {
+
+            var a = true;
+            var b = false;
+            var result = (a && b)
+            document.write(" a && b :  " + result + "<br>");
+
+            var result = (a || b)
+            document.write(" a || b :  " + result + "<br>");
+
+            var result = (!(a && b))
+            document.write(" !(a && b) :  " + result);
+
+
+        }
+
+
+        //Bitwise();
+        function Bitwise() {
+
+            var a = 2;//bit 01
+            var b = 3;//bit 11
+            var result = (a&b)
+            document.write(" a & b :  " + result + "<br>");
+
+            var result = (a|b)
+            document.write(" a | b :  " + result + "<br>");
+
+            var result = (a^b)
+            document.write(" a ^ b :  " + result + "<br>");
+
+            var result = (a<<b)
+            document.write(" a ^ b :  " + result + "<br>");
+
+        }
+
+
+        
+        Assi();
+        function Assi() {
+            var a = 10;
+            var b = 20;
+
+            var result = (a=a)
+            document.write(" a=a:  " + result + "<br>");
+
+            var result = (a+=b)
+            document.write(" a+=b :  " + result + "<br>");
+
+
+            var result = (a-=b)
+            document.write(" a-=b :  " + result + "<br>");
+
+            var result = a*=b;
+            document.write(" a*=b :  " + result + "<br>");
+
+            var result = a/=b;
+            document.write("a/=b :  " + result + "<br>");
+
+            var result = a%=b;
+            document.write(" a%=b :  " + result + "<br>");
+
+
+
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

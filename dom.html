@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Document Object Model (DOM)</title>
+</head>
+<body>
+    <h5>Javascript - Document Object Model (DOM)</h5>
+    <h1 id="my-heading"  title="maya" class="ss">Welcome to This Video!</h1>
+    <p class="mypara">Lorem, dipisicing elit. Repellendus, dolor. 1</p>
+    <p class="mypara">Lorem, dipisicing elit. Repellendus, dolor. 2</p>
+    <ul id="list1">
+        <li>1 Lorem, ipsum.</li>
+        <li>2 Lorem, ipsum.</li>
+        <li>3 Lorem, ipsum.</li>
+    </ul>
+
+<div>
+    <p class="mypara">Lorem, dipisicing elit. Repellendus, dolor.3</p>
+
+</div>
+
+<div>
+    <p class="mypara">Lorem, dipisicing elit. Repellendus, dolor.4</p>
+
+</div>
+
+    <ul id="list2">
+        <li>4 Lorem, ipsum.</li>
+        <li>5 Lorem, ipsum.</li>
+        <li>6 Lorem, ipsum.</li>
+    </ul>
+      <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" placeholder="">
+<img src="1.gif" alt="">
+<a href="http://www.googl.com">go to  google</a>
+<script>
+    var x= document.getElementById("my-heading");
+    document.write("<br> <br>"+"innerHTML = "+x.innerHTML+"<br>");
+    document.write("innerText = "+x.innerText+"<br>");
+    document.write("getAttribute id = "+x.getAttribute ("id")+"<br>");
+    document.write("getAttribute class = "+x.getAttribute ("class")+"<br>");
+    document.write("tagName = "+x.tagName+"<br>");
+
+
+    var xx= document.getElementsByClassName("mypara");
+    document.write("class = "+xx+"<br>");
+    document.write("class [0] = "+xx[0]+"<br>");
+    document.write("class [0]  innterHtml = "+xx[0].innerHTML+"<br>");
+    document.write("class [0]  for loop all = "+" p element with having mypara class"+"<br>");
+    for(var i=0 ; i<xx.length;i++){
+        document.write(xx[i].innerHTML+"<br>")
+    }
+
+
+ var $ul= document.getElementsByTagName("ul");
+  document.write("list = "+$ul+"<br>");
+  document.write($ul[1].innerHTML);
+
+  var $li=$ul[1].getElementsByTagName("li");
+  document.write("list = "+$li[0].innerHTML+"<br>");
+
+  var $input=document.getElementsByName("username");
+  document.write("list = "+$input[0].tagName+"<br>");
+
+  var pele=document.querySelector("p");
+  document.write("P element = "+pele.innerHTML+"<br>");
+  var $h1=document.querySelector("#my-heading");
+  document.write("H1 element = "+$h1.getAttributeNames+"<br>");
+
+
+  var $Allp=document.querySelectorAll("p");
+  document.write("P element = "+$Allp[1].innerHTML +"<br>");
+
+
+  var $Alldivp=document.querySelectorAll("div p");
+  document.write("P element = "+$Alldivp[1].innerHTML +"<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        document.write("<h5>" + "Screen Object " + "</h5>" + "<hr>");
+        document.write(" screen.width : " + screen.width + "<br>");
+        document.write(" screen.height : " + screen.height + "<br>");
+        document.write(" screen.availWidth : " + screen.availWidth + "<br>");
+        document.write(" screen.availHidth : " + screen.availHeight + "<br>");
+        document.write(" screen.colorDepth : " + screen.colorDepth + "<br>");
+        document.write(" screen.pixelDepth : " + screen.pixelDepth + "<br>");
+
+        document.write("<hr>" + "<h5>" + "History Object " + "</h5>" + "<hr>");
+        document.write(" history length : " + history.length + "<br>");
+        //history.back();
+        //document.write(" history back : " + history.back() + "<br>");
+        //history.forward();
+        //history.go(1);   
+        //history.go(-2);
+
+        document.write("<hr>" + "<h5>" + "Navigator Object " + "</h5>" + "<hr>");
+        document.write(" cookieEnabled: " + navigator.cookieEnabled + "<br>");
+        document.write(" appName: " + navigator.appName + "<br>");
+        document.write(" appVersion: " + navigator.appVersion + "<br>");
+        document.write(" appCodeName: " + navigator.appCodeName + "<br>");
+        document.write(" platform: " + navigator.platform + "<br>");
+        document.write(" language: " + navigator.language + "<br>");
+        document.write(" language: " + navigator.javaEnabled() + "<br>");
+
+        document.write("<hr>" + "<h5>" + "Location Object " + "</h5>" + "<hr>");
+        // location="http://www.google.com";
+        document.write(" href: " + location.href + "<br>");
+        document.write(" host: " + location.host + "<br>");
+        document.write(" hostname: " + location.hostname + "<br>");
+        document.write(" pathname: " + location.pathname + "<br>");
+        document.write(" protocol: " + location.protocol + "<br>");
+        document.write(" protocol: " + location.port + "<br>");
+
+       // location.assign("http://www.google.com");
+      // location.reload();
+      //location.replace("http://www.google.com");
+
+      document.write("<hr>" + "<h5>" + "cooki " + "</h5>" + "<hr>");
+
+      document.cookie="fname=somnath";
+
+
+    </script>
+
+</body>
+
+</html>

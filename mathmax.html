@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h4>Mathmax Function</h4>
+        <hr>
+
+        <script>
+            var d = [40, 100, 20, 35, 1, 6, 10];
+            document.write("array = " + d + "<br>");
+
+            function nummax(array1) {
+
+                return Math.max.apply(null, array1);
+                //return Math.max(10,300,20);
+            }
+            document.write("Max Value = " + nummax(d) + "<br>");
+
+
+            document.write("<h4> " + Mith.min + "</h4>" + "<br>");
+
+
+            function nummax2(array2) {
+
+                return Math.min.apply(null, array2);
+                //return Math.max(10,300,20);
+            }
+            document.write("Min Value = " + nummax2(d) + "<br>");
+        </script>
+
+    </div>
+
+</body>
+
+</html>

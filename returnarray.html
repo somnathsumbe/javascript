@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ 
+    <script>
+
+debugger;
+function Mobile(m_no){
+    this.model=m_no,
+    this.price= ()=> document.write(this.model +" " + "price Rs : 30000"+"<br>");
+    
+}
+
+var sumsang=new Mobile( "samsung Galaxy");
+sumsang.price();
+var lg=new Mobile("LG-2020");
+lg.price();
+debugger;
+// var x = typeof sumsang.model !== 'undefined' ? "Available" : " Donesnt Exist";
+// document.write(x);
+
+var x = 'memory' in sumsang ? "Available" : " Donesnt Exist";
+document.write(x);
+
+
+
+ 
+
+
+
+    </script>
+</body>
+
+</html>

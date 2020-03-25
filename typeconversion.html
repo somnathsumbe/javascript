@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Type Conversion </h3>
+        <hr>
+        <script>
+            document.write(typeof ("somnath") + "<Br>");
+            document.write(typeof (100) + "<Br>");
+            document.write(typeof ('100') + "<Br>");
+            document.write(typeof (3.21) + "<Br>");
+            document.write(typeof ([1, 2, 3]) + "<Br>");
+            document.write(typeof (false) + "<Br>");
+            document.write(typeof (null) + "<Br>");
+            document.write(typeof (undefined) + "<Br>");
+
+            document.write("<h3>" + "Number to String Conversion " + "</h3>" + "<hr>" + "<Br>");
+
+            var a = 100;
+            document.write(typeof (a) + "<br>");
+            document.write(typeof (String(a)) + "<br>");
+
+            var x = String(500);
+            document.write(x + "<br>");
+            document.write(typeof (x) + "<br>");
+
+            var xx = String(500 + 200);
+            document.write(xx + "<br>");
+            document.write(typeof (xx) + "<br>");
+
+            var c = 800;
+            document.write(c + "<br>");
+            document.write(typeof (c.toString()) + "<br>");
+
+            document.write("<h3>" + "Booleans to String Conversion " + "</h3>" + "<hr>" + "<Br>");
+            var z = false;
+            document.write(typeof (z) + "<br>");
+            String(z);
+            document.write(false + "<br>");
+            document.write(typeof (String(false)) + "<br>");
+            document.write(false + "<br>");
+            document.write(typeof (true.toString()));
+        </script>
+
+    </div>
+
+</body>
+
+</html>

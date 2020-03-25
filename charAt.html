@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Extracting string Characters</h1>
+        <hr>
+        <script>
+            var d = "Somnath Sumbe";
+            document.write(" <h1>" + "Concat" + " </h1>"+"<hr>"+"<br>");
+            document.write("String = " + d + "<br>");
+            document.write("charAt 0 position= " + d.charAt(0) + "<br>");
+            document.write("charAt 3 position= " + d.charAt(3) + "<br>");
+
+
+            document.write(" <h1>" + "charCodeAt return UTF-16 Code(0 -65536)" + " </h1>"+"<hr>"+"<br>");
+            document.write("String = " + d + "<br>");
+            document.write("charAt 0 position= " + d.charAt(0) + "<br>");
+            document.write("charAt 0 position= " + d.charCodeAt(0) + "<br>");
+            document.write("charAt 3 position= " + d.charAt(3) + "<br>");
+            document.write("charAt 3 position= " + d.charCodeAt(3) + "<br>");
+
+            document.write(" <h1>" + "Property Access" + " </h1>"+"<hr>"+"<br>");
+            document.write("charAt 0 position= " + d[0] + "<br>");
+            document.write("charAt 0 position= " + d[20] + "<br>");
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h3>PushMethod</h3>
+    <hr>
+    Array : <span id="array"></span><br>
+    Push : <span id="push"></span><br>
+    return Length : <span id="length"></span><br>
+
+
+    <hr>
+    <h3>PopMethod</h3>
+    <hr>
+    Array : <span id="array1"></span><br>
+    Pop : <span id="pop"></span><br>
+    last element remove Item : <span id="remove"></span><br>
+
+
+    <hr>
+    <h3>UnShiftMethod</h3>
+    <hr>
+    Array : <span id="array2"></span><br>
+    unShift : <span id="unShift"></span><br>
+    return Length : <span id="remove1"></span><br>
+
+    <hr>
+    <h3>ShiftMethod</h3>
+    <hr>
+    Array : <span id="array3"></span><br>
+    Shift : <span id="Shift"></span><br>
+    return Length : <span id="remove2"></span><br>
+    <script>
+        debugger;
+
+        //add ele end
+        var students = ["Rahul", "Somnath", "Sohan", "Mohan", "Seema", "ronak"];
+        document.getElementById("array").innerHTML = students;
+        var x = students.push("pallavi", "ritesh");
+        document.getElementById("push").innerHTML = students;
+        document.getElementById("length").innerHTML = x;
+
+        //remove ele end
+        var students1 = ["maya", "rani", "ronok"];
+        document.getElementById("array1").innerHTML = students1;
+        var xx = students1.pop();
+        document.getElementById("pop").innerHTML = students1;
+        document.getElementById("remove").innerHTML = xx;
+
+
+        //add ele begining
+        var students2 = ["maya", "rani", "ronok"];
+        document.getElementById("array2").innerHTML = students2;
+        var xxx = students2.unshift("soni","rohit");
+        document.getElementById("unShift").innerHTML = students2;
+        document.getElementById("remove1").innerHTML = xxx;
+
+
+        //remobe ele begining
+        var students3 = ["maya", "rani", "ronok"];
+        document.getElementById("array3").innerHTML = students3;
+        var xxxx = students3.shift("soni");
+        document.getElementById("Shift").innerHTML = students3;
+        document.getElementById("remove2").innerHTML = xxxx;
+    </script>
+</body>
+
+</html>

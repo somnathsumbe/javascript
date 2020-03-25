@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+
+    <script>
+        var Mobile = function (mmodel, mcolor, mprice) {
+            debugger;
+            this.mmodel = mmodel;
+            this.mcolor = mcolor;
+            var mprice = mprice;
+
+            document.write(" Model No : " + this.mmodel + "<br>" + " Moble Color : " + this.mcolor + "<br>" +
+                "Mobile Price : " + this.mprice + "<br>");
+
+            this.totalprice = function () {
+
+                document.write("Mobile In Hand Price : " + mprice + "<br>" + "<br>");
+                return  mprice
+                
+            }
+            this.totalprice();
+
+
+        }
+        var Redmi = new Mobile("Red ME A3", "black", 13000);
+
+        var ss = new Mobile("nokia 1100", "black", 1600);
+      document.write(  ss.totalprice());
+    </script>
+
+
+</body>
+
+</html>

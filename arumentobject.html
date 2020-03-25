@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            function add() {
+                // document.write("sum = " + num1 + num2 + "<br>");
+                // document.write("argument 0=" + arguments[0] + "<br>");
+                // document.write("argument 1=" + arguments[1] + "<br>");
+                // document.write("argument 2=" + arguments[2] + "<br>");
+                // document.write("arguments lemgth = " + arguments.length + "<br>");
+                debugger;
+                var result = 0
+                for (let i = 0; i < arguments.length; i++) {
+                    result = result + arguments[i];
+
+                }
+
+                document.write("arguments addition = " + result);
+            }
+            //add(10, 20, 30);
+
+
+            function display(a,b,...num) {
+                console.log(a);
+                console.log(b);
+                console.log(num);
+
+            }
+            display(10, 20, 30, 40, 50);
+
+
+            function show(a) {
+                console.log(a);
+                console.log(arguments);
+
+            }
+            show(10, 20, 30, 40, 50);
+        </script>
+
+    </div>
+
+</body>
+
+</html>

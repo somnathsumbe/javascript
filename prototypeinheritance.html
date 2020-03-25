@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Prototype Inharitance</h1>
+    <hr>
+    <script>
+        var Mobile = function () {
+            this.a = 10;
+        }
+
+        // var m = new Mobile();
+        Mobile.prototype.c = "black";
+        // document.write("Mobile class : "+m.a + " " + m.c +"<br>");
+
+        // console.log(m);
+
+
+
+        //subclass 
+        var samsung = function () {
+            Mobile.call(this);
+            this.b = 500000;
+        }
+
+
+        samsung.prototype = Object.create(Mobile.prototype);
+        samsung.prototype.constructor = samsung;
+        var s = new samsung();
+        document.write("Samsung Class : " + s.b + " " + s.a + " " + s.c)
+    </script>
+</body>
+
+</html>

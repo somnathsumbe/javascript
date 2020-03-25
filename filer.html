@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-4">
+            <h4>Array.filter()</h4>
+            <hr>
+            <div id="demo"></div>
+            <div id="demo1"></div>
+        </div>
+
+        <div class="col-md-4">
+            <h4>Array.reduce() </h4>
+            <hr>
+            <div id="demo3"></div>
+            <div id="demo4"></div>
+        </div>
+
+        <div class="col-md-4">
+            <h4>Every ()</h4>
+            <hr>
+            <div id="demo5"></div>
+            <div id="demo6"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="col-md-4">
+            <h4>Array.filter()</h4>
+            <hr>
+            <div id="demo7"></div>
+            <div id="demo8"></div>
+        </div>
+
+        <div class="col-md-4">
+            <h4>Array.lastindexOf() </h4>
+            <hr>
+            <div id="demo10"></div>
+            <div id="demo11"></div>
+        </div>
+
+        <div class="col-md-4">
+            <h4>Filter</h4>
+            <hr>
+            <div id="demo5"></div>
+            <div id="demo6"></div>
+        </div>
+    </div>
+    <script>
+        var num = [20, 10, 5, 2, 100, 50, 16];
+        document.getElementById("demo").innerHTML = " Array = " + num;
+
+        var num1 = num.filter(numfilter);
+        document.getElementById("demo1").innerHTML = "Filter  Array = " + num1;
+
+        function numfilter(value, index, array) {
+            return value > 10;
+
+        }
+
+        var num2 = [20, 10, 5];
+        document.getElementById("demo3").innerHTML = " Array = " + num2;
+        var num3 = num2.reduce(getsum);
+        document.getElementById("demo4").innerHTML = "Total sum using reduce method  Array = " + num3;
+
+        function getsum(total, value) {
+            return total + value;
+
+        }
+
+
+        var num4 = [20, 10, 5];
+        document.getElementById("demo5").innerHTML = " Array = " + num4;
+        var num5 = num4.every(getevery);
+        document.getElementById("demo6").innerHTML = "using every method  Array = " + num5;
+
+        function getevery(value, index, array) {
+            debugger;
+            return value > 2;
+
+        }
+
+
+
+        var num10 = ["somnath", "hosing", "somnath", "sunita", "maya"];
+        document.getElementById("demo10").innerHTML = " Array = " + num10;
+        var num11 = num10.lastIndexOf('maya');
+        document.getElementById("demo11").innerHTML = "Last Index OF = " + num11;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function abc() {
+            debugger;
+            var x= 0;
+            // document.write(arguments.length+ "<br>");
+            // document.write(arguments[0] + "<br>");
+            // document.write(arguments[1] + "<br>");
+            // document.write(arguments[2] + "<br>");
+            // document.write(arguments[3] + "<br>");
+
+            for(var i=0 ;i<arguments.length;i++){
+
+                     x=x+arguments[i];
+            }
+              return x;
+        }
+
+
+        document.write(abc(20, 30, 30, 40))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Prototype</h1>
+
+    <script>
+        debugger;
+        var Mobile = function (modelno) {
+            this.modelno = modelno;
+            this.price = 3000;
+            document.write("Model NO : " + this.modelno + "<br>");
+            document.write("Model Price: " + this.price + "<br>");
+        }
+        Mobile.prototype.mcolor = "white";
+        var lg = new Mobile("LG");
+    //    document.write(Object.keys(lg) + "<br>");
+
+        for (var key in lg) {
+            debugger;
+            document.write(key);
+        }
+    </script>
+
+
+</body>
+
+</html>

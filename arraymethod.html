@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h3>Array Method</h3>
+    <hr>
+    <p id="stud"></p>
+    <h3>object</h3>
+    <hr>
+    <p id="fname"></p>
+    <p id="lname"></p>
+    <p id="age"></p>
+    <script>
+        var students = ["Rahul", "Somnath", "Sohan", "Mohan", "Seema"];
+        document.getElementById("stud").innerHTML = students;
+
+        var name=students[3];
+        document.write("<br>" + name );
+
+
+        students[0]="rani";
+        document.write("<br>"+students);
+        document.write("<br>"+students[0]);
+debugger;
+        var emp = {fname:"somnath", lname:"sumbe", age:32}
+        document.getElementById("fname").innerHTML = emp["fname"];
+        document.getElementById("lname").innerHTML = emp.lname;
+        document.getElementById("age").innerHTML = emp.age;
+
+
+
+    </script>
+</body>
+
+</html>

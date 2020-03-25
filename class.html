@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Class In Javascript</h1>
+    <script>
+        class Mobile {
+            // constructor() {
+            //     this.a = 12;
+            //     this.show = () => "Instance Member";
+            // }
+            dispaly = () => "Prototype Member";
+        }
+
+        var samsung = new Mobile();
+        // document.write(samsung.a+"<br>");
+        // document.write(samsung.show()+"<br>");
+        document.write(samsung.dispaly() + "<br>");
+
+
+
+
+        class Mobile1 {
+            constructor(modelno , mcolor) {
+                this.modelno=modelno;
+                this.mcolor=mcolor;
+                this.show = () => "Instance Member";
+            }
+            dispaly = () => " <br> "+this.modelno+ "  "+ this.mcolor + "  "+ "Rs -3000" + "<br>";
+        }
+
+        var samsung = new Mobile1("galaxi", "green");
+        var nokia = new Mobile1("nokia1600", "black");
+        // document.write(samsung.a+"<br>");
+        // document.write(samsung.show()+"<br>");
+        document.write(samsung.dispaly());
+        document.write(nokia.dispaly());
+    </script>
+</body>
+
+</html>

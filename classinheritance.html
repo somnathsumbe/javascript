@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Class Inheritance </h1>
+    <hr>
+    <script>
+        class Father {
+            constructor(fmoney){
+                debugger;
+                this.fmoney=fmoney;
+
+            }
+            showFmoney = () => this.fmoney + " "+"Father Money " + "<br>"
+        }
+
+        class Son extends Father {
+            constructor(fmoney){
+             super(fmoney)
+
+            }
+            showSmoney = () => "Son Money " + "<br>"
+        }
+        class grandchild extends Son {
+            showGmoney = () => "Grand Money " + "<br>"
+        }
+
+
+        var s = new Son('50000000');
+
+        document.write("Son" + "<hr>");
+        document.write(s.showFmoney());
+        document.write(s.showSmoney());
+
+        // document.write("<br><br>" + "Grandchild" + "<hr>");
+
+        // var g = new grandchild();
+        // document.write(g.showFmoney());
+        // document.write(g.showSmoney());
+        // document.write(g.showGmoney());
+    </script>
+</body>
+
+</html>

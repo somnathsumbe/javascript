@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Array To String</h1>
+        <hr>
+        <script>
+            debugger;
+            var students = ["somnath", "sunita", "shivansh", "suman", "seema"];
+            document.write("students array = " + students + "<br>");
+            document.write("students string = " + students.toString() + "<br>");
+            document.write("students string = " + students + "<br>");
+            document.write("students join  = " + students.join("*") + "<br>");
+
+            document.write(" <h1>" + "Changing Elements in array" + " </h1>" + "<hr>" + "<br>");
+            var stud = ["somnath", "sunita", "shivansh", "suman", "seema"];
+            document.write("students array  = " + stud + "<br>");
+            document.write("students array 0 = " + stud[0] + "<br>");
+            document.write("students array 1 = " + stud[1] + "<br>");
+            document.write("students array 2 = " + stud[2] + "<br>");
+            document.write("students array 3 = " + stud[3] + "<br>");
+            document.write("students array 4 = " + stud[4] + "<br>");
+            document.write("students array 5 = " + stud[5] + "<br>");
+
+            stud[1] = "Rajesh"
+            document.write("students array  = " + stud + "<br>");
+            stud[stud.length] = "ramayan"
+            document.write("students array  = " + stud + "<br>");
+
+            document.write(" <h1>" + "Delet Elements in array" + " </h1>" + "<hr>" + "<br>");
+            var s = ["somnath", "sunita", "shivansh", "suman", "seema"];
+            document.write("Array  = " + s + "<br>");
+            delete s[0];
+            document.write("Delete 0  = " + s + "<br>");
+
+            document.write(" <h1>" + "Splicing an array" + " </h1>" + "<hr>" + "<br>");
+            var ss = ["somnath", "sunita", "shivansh", "suman", "seema"];
+            document.write("Array  = " + ss + "<br>");
+
+            ss.splice(2, 0, "sohan", "Mohan")
+            document.write("Add two data  = " + ss + "<br>");
+            ss.splice(2, 2, "R", "Q")
+            document.write("Add and delete 2 data  = " + ss + "<br>");
+
+            ss.splice(0, 2)
+            document.write("Remove  = " + ss + "<br>");
+
+            document.write(" <h1>" + "Marging two or More Array" + " </h1>" + "<hr>" + "<br>");
+            var a1 = [1, 2, 3];
+            var b1 = [4, 5, 6];
+            var d1 = [7, 8, 9];
+            var c1 = a1.concat(b1, d1);
+            document.write(a1 + "<br>");
+            document.write(b1 + "<br>");
+            document.write(c1 + "<br>");
+
+            var c1 = a1.concat(9, 10, 11);
+            document.write(c1 + "<br>");
+
+            document.write(" <h1>" + "Slice an Array" + " </h1>" + "<hr>" + "<br>");
+            var a2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            document.write(a2 + "<br>");
+            var b2 = a2.slice(1,6)
+            document.write(b2 + "<br>");
+        </script>
+
+    </div>
+
+</body>
+
+</html>

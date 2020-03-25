@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <p id="stud">ARRAY</p>
+    <p id="stud1">ARRAY</p>
+    <p id="num1">ARRAY</p>
+    <p id="num2">ARRAY</p>
+    <p id="num3">ARRAY</p>
+
+
+    <script>
+        var student = ["Rahul", "Somnath", "Sohan", "Mohan", "Seema"];
+        document.getElementById("stud").innerHTML = student;
+
+        var student1 = new Array("Raju", "Somnath", "Sohan", "Mohan", "Seema");
+        document.getElementById("stud1").innerHTML = student1;
+
+        var num1 = new Array(20, 30, 40, 50, 60);
+        document.getElementById("num1").innerHTML = num1;
+
+        var num2 = new Array(120, 230, 340, 350, 160);
+        document.getElementById("num2").innerHTML = num2[0];
+
+
+        // if we user new keyword and crate array and it contain one element that thime result will be undefine
+        var num3 = new Array(12);
+      let result=  document.getElementById("num3").innerHTML = num3[0];
+debugger;
+      var abc={"name":"somnath", "age":32}
+      document.write(abc["name"]+"<br>");
+      document.write(abc["age"]+"<br>");
+
+      document.write(abc.name+"<br>");
+      document.write(abc.age+"<br>");
+      document.write(Object.is(abc)+"<br>");
+      document.write(Array.isArray(student)+"<br>");
+    </script>
+</body>
+
+</html>

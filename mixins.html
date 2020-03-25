@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //mixin fuction.
+
+        function mixin (target , ...source){
+            Object.assign(target, ...source);
+        }
+        var eating = {
+            eat: () => 'I can eat' + "<br>"
+        }
+
+        var walking = {
+            walk: () => 'I can walk' + "<br>"
+        }
+
+
+        var talking = {
+            talk: () => 'I can talk' + "<br>"
+        }
+
+        var staring = {
+            start: () => 'robocap can start' + "<br>"
+        }
+
+        //Human Class
+        var Human = function () {
+
+        }
+
+
+        //Human Class
+        var robocap = function () {
+
+        }
+
+
+        mixin(Human.prototype, eating, walking, talking);
+        var rahul = new Human;
+
+        document.write("Rahul Feature " + "<hr>");
+        document.write(rahul.eat());
+        document.write(rahul.walk());
+        document.write(rahul.talk());
+
+        mixin(robocap.prototype, staring, walking, talking);
+        var rabot = new robocap;
+
+        document.write("<br> <br>");
+
+        document.write("robocap Feature " + "<hr>");
+
+        // document.write(robocap.eat());
+        document.write(rabot.walk());
+        document.write(rabot.talk());
+        document.write(rabot.start());
+    </script>
+</body>
+
+</html>
