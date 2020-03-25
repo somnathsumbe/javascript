@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>forEach loop</h1>
+    <script>
+        var family = ["somnath", "sunita ", "Shivansh", 32, 28, 3]
+
+        family.forEach(function (name, i, arr) {
+             document.write(name+ " " + i+"<br>");
+            // console.log(family);
+
+            
+        })
+        document.write( family.length+"<br>");
+
+        document.write( "<h1>" + "for of" + "</h1>");  
+
+        for(let x of family){
+            document.write(x+"<br>");
+        }
+
+    </script>
+</body>
+
+</html>

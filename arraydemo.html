@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        document.write("<h1>" + "Array Itaration" + "</h1>");
+        var family = ["somnath", "sunita", "shivansh", 32];
+        document.write(family + "<br>");
+        var result;
+        for (let i = 0; i < family.length; i++) {
+            debugger;
+            document.write(family[i]+"<br>");
+        };
+
+
+        var student = [];
+        student[0] = "raju";
+        student[1] = "Muktaji";
+        student[2] = "Sumbe";
+        document.write(student + "<br>");
+        document.write(student[0] + "<br>");
+        document.write(student[1] + "<br>");
+        document.write(student[2] + "<br>");
+
+        var geek = ["rahul", "ram", 32, "jay"];
+        document.write(geek + "<br>");
+        document.write(geek[0] + "<br> <br>");
+
+        var geek1 = [, , , , ]
+        document.write(geek1[0] + "<br>");
+
+
+
+
+        var geek1 = [, , , , ]
+        document.write(geek1.length + "<br>");
+
+        var geek2 = [, , 45, , 60]
+        document.write(geek2 + "<br>");
+        document.write(geek2[2] + "<br>");
+
+
+        var a = 10,
+            b = 20,
+            c = 30;
+        var geek3 = [a, b, c];
+        document.write(geek3 + "<br>");
+
+
+        document.write("<h1>" + "Array contractor" + "</h1>");
+        var geek5 = new Array();
+
+        geek5[0] = "raju";
+        geek5[1] = "Muktaji";
+        geek5[2] = "Sumbe";
+        document.write(geek5 + "<br>");
+        document.write(geek5[0] + "<br>");
+        document.write(geek5[1] + "<br>");
+        document.write(geek5[2] + "<br>");
+
+        var geek6 = new Array(10, 22, "somnath,12.5");
+        document.write(geek6 + "<br>");
+
+        var geek7 = new Array(10);
+        document.write(geek7[0]);
+
+
+
+        var ss = ["rahul", 2, 3];
+        var x = ss;
+        document.write("<Br>" + ss);
+        document.write("<Br>" + x);
+        x[0] = "somnath;"
+        document.write("<Br>" + ss);
+        document.write("<Br>" + x);
+    </script>
+</body>
+
+</html>
